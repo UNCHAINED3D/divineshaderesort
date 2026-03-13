@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'RuntimeRegular';
+  src: url('/fonts/RuntimeRegular-m2Odx.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -22,5 +29,5 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'RuntimeRegular', Arial, Helvetica, sans-serif;
 }
