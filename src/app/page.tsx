@@ -240,12 +240,12 @@ export default function Home() {
           <h2 className="text-4xl font-bold text-center text-green-800 mb-12">What Our Guests Say</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white p-8 rounded-lg shadow-lg">
-              <img src="/interior-bedroom.png" alt="Guest" className="w-16 h-16 rounded-full mx-auto mb-4" />
+              <img src="/profile-1.png" alt="Guest" className="w-16 h-16 rounded-full mx-auto mb-4" />
               <p className="text-gray-600 mb-4 italic">"An absolute paradise! The wellness focus and natural beauty made our stay unforgettable."</p>
               <cite className="text-tan-orange font-semibold">- Sarah & John, Sydney</cite>
             </div>
             <div className="bg-white p-8 rounded-lg shadow-lg">
-              <img src="/interior-livingroom.png" alt="Guest" className="w-16 h-16 rounded-full mx-auto mb-4" />
+              <img src="/profile-2.png" alt="Guest" className="w-16 h-16 rounded-full mx-auto mb-4" />
               <p className="text-gray-600 mb-4 italic">"The perfect romantic getaway. We felt completely rejuvenated."</p>
               <cite className="text-tan-orange font-semibold">- Emma & Michael, Brisbane</cite>
             </div>
