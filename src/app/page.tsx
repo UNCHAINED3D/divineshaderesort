@@ -42,8 +42,10 @@ export default function Home() {
           <nav className="hidden md:flex space-x-6">
             <button onClick={() => scrollToSection('home')} className="text-orange-700 hover:text-green-600 font-medium">Home</button>
             <button onClick={() => scrollToSection('about')} className="text-orange-700 hover:text-green-600 font-medium">About</button>
+            <button onClick={() => scrollToSection('rooms')} className="text-orange-700 hover:text-green-600 font-medium">Rooms</button>
             <button onClick={() => scrollToSection('amenities')} className="text-orange-700 hover:text-green-600 font-medium">Amenities</button>
             <button onClick={() => scrollToSection('gallery')} className="text-orange-700 hover:text-green-600 font-medium">Gallery</button>
+            <button onClick={() => scrollToSection('booking')} className="text-orange-700 hover:text-green-600 font-medium">Booking</button>
             <button onClick={() => scrollToSection('testimonials')} className="text-orange-700 hover:text-green-600 font-medium">Testimonials</button>
             <button onClick={() => scrollToSection('contact')} className="text-orange-700 hover:text-green-600 font-medium">Contact</button>
           </nav>
@@ -90,6 +92,39 @@ export default function Home() {
             <div className="text-center p-6 bg-amber-50 rounded-lg">
               <h3 className="text-xl font-semibold text-orange-800 mb-4">Romantic Getaways</h3>
               <p className="text-gray-600">Intimate settings for couples to reconnect.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Rooms */}
+      <section id="rooms" className="py-20 bg-white/80">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center text-green-800 mb-12">Accommodations</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Villa Suite" className="w-full h-64 object-cover" />
+              <div className="p-6">
+                <h3 className="text-2xl font-semibold text-green-800 mb-2">Villa Suite</h3>
+                <p className="text-gray-600 mb-4">Spacious villa with private balcony overlooking the rainforest. King bed, en-suite bathroom.</p>
+                <p className="text-2xl font-bold text-tan-orange">$1,200/night</p>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Treehouse Retreat" className="w-full h-64 object-cover" />
+              <div className="p-6">
+                <h3 className="text-2xl font-semibold text-green-800 mb-2">Treehouse Retreat</h3>
+                <p className="text-gray-600 mb-4">Unique treehouse experience with panoramic views. Queen bed, outdoor shower.</p>
+                <p className="text-2xl font-bold text-tan-orange">$1,500/night</p>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Garden Bungalow" className="w-full h-64 object-cover" />
+              <div className="p-6">
+                <h3 className="text-2xl font-semibold text-green-800 mb-2">Garden Bungalow</h3>
+                <p className="text-gray-600 mb-4">Ground-level bungalow surrounded by tropical gardens. King bed, private terrace.</p>
+                <p className="text-2xl font-bold text-tan-orange">$1,000/night</p>
+              </div>
             </div>
           </div>
         </div>
@@ -143,18 +178,76 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Booking */}
+      <section id="booking" className="py-20 bg-amber-50/80">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center text-green-800 mb-12">Book Your Stay</h2>
+          <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-8">
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <h3 className="text-2xl font-semibold text-green-800 mb-4">Check Availability</h3>
+                <div className="bg-gray-100 p-4 rounded-lg">
+                  <h4 className="font-semibold mb-2">October 2024 Availability</h4>
+                  <div className="grid grid-cols-7 gap-1 text-sm">
+                    <div className="text-center font-semibold">Su</div>
+                    <div className="text-center font-semibold">Mo</div>
+                    <div className="text-center font-semibold">Tu</div>
+                    <div className="text-center font-semibold">We</div>
+                    <div className="text-center font-semibold">Th</div>
+                    <div className="text-center font-semibold">Fr</div>
+                    <div className="text-center font-semibold">Sa</div>
+                    {Array.from({ length: 31 }, (_, i) => {
+                      const day = i + 1;
+                      const available = [5, 6, 12, 13, 19, 20, 26, 27].includes(day);
+                      return (
+                        <div key={day} className={`text-center p-2 rounded ${available ? 'bg-green-200 text-green-800' : 'bg-red-200 text-red-800'}`}>
+                          {day}
+                        </div>
+                      );
+                    })}
+                  </div>
+                  <p className="mt-4 text-sm text-gray-600">
+                    <span className="inline-block w-4 h-4 bg-green-200 rounded mr-2"></span>Available
+                    <span className="inline-block w-4 h-4 bg-red-200 rounded ml-4 mr-2"></span>Booked
+                  </p>
+                </div>
+              </div>
+              <div>
+                <h3 className="text-2xl font-semibold text-green-800 mb-4">Make a Reservation</h3>
+                <form className="space-y-4">
+                  <div className="grid grid-cols-2 gap-4">
+                    <input type="date" className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Check-in" />
+                    <input type="date" className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Check-out" />
+                  </div>
+                  <select className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                    <option>Select Room Type</option>
+                    <option>Villa Suite</option>
+                    <option>Treehouse Retreat</option>
+                    <option>Garden Bungalow</option>
+                  </select>
+                  <input type="number" placeholder="Guests" className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" />
+                  <button type="submit" className="w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-lg font-semibold transition duration-300">Request Booking</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Testimonials */}
       <section id="testimonials" className="py-20 bg-amber-50/80">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center text-green-800 mb-12">What Our Guests Say</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white p-8 rounded-lg shadow-lg">
+              <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=150" alt="Guest" className="w-16 h-16 rounded-full mx-auto mb-4" />
               <p className="text-gray-600 mb-4 italic">"An absolute paradise! The wellness focus and natural beauty made our stay unforgettable."</p>
-              <cite className="text-orange-800 font-semibold">- Sarah & John, Sydney</cite>
+              <cite className="text-tan-orange font-semibold">- Sarah & John, Sydney</cite>
             </div>
             <div className="bg-white p-8 rounded-lg shadow-lg">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=150" alt="Guest" className="w-16 h-16 rounded-full mx-auto mb-4" />
               <p className="text-gray-600 mb-4 italic">"The perfect romantic getaway. We felt completely rejuvenated."</p>
-              <cite className="text-orange-800 font-semibold">- Emma & Michael, Brisbane</cite>
+              <cite className="text-tan-orange font-semibold">- Emma & Michael, Brisbane</cite>
             </div>
           </div>
         </div>
@@ -167,15 +260,15 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12">
             <div>
               <div className="mb-8">
-                <h3 className="text-xl font-semibold text-orange-800 mb-2">Location</h3>
+                <h3 className="text-xl font-semibold text-tan-orange mb-2">Location</h3>
                 <p className="text-gray-600">Scenic Rim, Queensland, Australia</p>
               </div>
               <div className="mb-8">
-                <h3 className="text-xl font-semibold text-orange-800 mb-2">Email</h3>
+                <h3 className="text-xl font-semibold text-tan-orange mb-2">Email</h3>
                 <p className="text-gray-600">info@divineshaderesort.com</p>
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-orange-800 mb-2">Phone</h3>
+                <h3 className="text-xl font-semibold text-tan-orange mb-2">Phone</h3>
                 <p className="text-gray-600">+61 400 123 456</p>
               </div>
             </div>
