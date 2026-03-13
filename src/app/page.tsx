@@ -3,8 +3,8 @@
 import { useState, useEffect } from 'react';
 
 const slides = [
+  'https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
   'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
-  'https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
   'https://images.unsplash.com/photo-1540541338287-41700207dee6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80'
 ];
 
@@ -103,7 +103,7 @@ export default function Home() {
           <h2 className="text-4xl font-bold text-center text-green-800 mb-12">Accommodations</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Villa Suite" className="w-full h-64 object-cover" />
+              <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Villa Suite" className="w-full h-64 object-cover" />
               <div className="p-6">
                 <h3 className="text-2xl font-semibold text-green-800 mb-2">Villa Suite</h3>
                 <p className="text-gray-600 mb-4">Spacious villa with private balcony overlooking the rainforest. King bed, en-suite bathroom.</p>
@@ -111,7 +111,7 @@ export default function Home() {
               </div>
             </div>
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Treehouse Retreat" className="w-full h-64 object-cover" />
+              <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Treehouse Retreat" className="w-full h-64 object-cover" />
               <div className="p-6">
                 <h3 className="text-2xl font-semibold text-green-800 mb-2">Treehouse Retreat</h3>
                 <p className="text-gray-600 mb-4">Unique treehouse experience with panoramic views. Queen bed, outdoor shower.</p>
@@ -119,7 +119,7 @@ export default function Home() {
               </div>
             </div>
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Garden Bungalow" className="w-full h-64 object-cover" />
+              <img src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Garden Bungalow" className="w-full h-64 object-cover" />
               <div className="p-6">
                 <h3 className="text-2xl font-semibold text-green-800 mb-2">Garden Bungalow</h3>
                 <p className="text-gray-600 mb-4">Ground-level bungalow surrounded by tropical gardens. King bed, private terrace.</p>
@@ -136,22 +136,22 @@ export default function Home() {
           <h2 className="text-4xl font-bold text-center text-green-800 mb-12">Amenities & Activities</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
-              <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Spa" className="w-full h-40 object-cover rounded mb-4" />
+              <img src="https://images.unsplash.com/photo-1596178060810-fb4bd482ee2c?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Spa" className="w-full h-40 object-cover rounded mb-4" />
               <h3 className="text-xl font-semibold text-green-800 mb-2">Spa & Wellness</h3>
               <p className="text-gray-600">Indulge in traditional Balinese massages and wellness therapies.</p>
             </div>
             <div className="text-center bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
-              <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Yoga" className="w-full h-40 object-cover rounded mb-4" />
+              <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Yoga" className="w-full h-40 object-cover rounded mb-4" />
               <h3 className="text-xl font-semibold text-green-800 mb-2">Yoga & Meditation</h3>
               <p className="text-gray-600">Daily yoga classes overlooking the rainforest.</p>
             </div>
             <div className="text-center bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
-              <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Dining" className="w-full h-40 object-cover rounded mb-4" />
+              <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Dining" className="w-full h-40 object-cover rounded mb-4" />
               <h3 className="text-xl font-semibold text-green-800 mb-2">Organic Dining</h3>
               <p className="text-gray-600">Fresh, locally-sourced meals prepared with love.</p>
             </div>
             <div className="text-center bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
-              <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Hiking" className="w-full h-40 object-cover rounded mb-4" />
+              <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Hiking" className="w-full h-40 object-cover rounded mb-4" />
               <h3 className="text-xl font-semibold text-green-800 mb-2">Nature Walks</h3>
               <p className="text-gray-600">Explore the Scenic Rim's breathtaking trails.</p>
             </div>
@@ -168,9 +168,9 @@ export default function Home() {
           </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
             <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Resort view" className="w-full h-64 object-cover rounded-lg hover:scale-105 transition duration-300" />
-            <img src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Villa" className="w-full h-64 object-cover rounded-lg hover:scale-105 transition duration-300" />
-            <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Wellness" className="w-full h-64 object-cover rounded-lg hover:scale-105 transition duration-300" />
-            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Nature" className="w-full h-64 object-cover rounded-lg hover:scale-105 transition duration-300" />
+            <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Luxury villa" className="w-full h-64 object-cover rounded-lg hover:scale-105 transition duration-300" />
+            <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Treehouse" className="w-full h-64 object-cover rounded-lg hover:scale-105 transition duration-300" />
+            <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Garden retreat" className="w-full h-64 object-cover rounded-lg hover:scale-105 transition duration-300" />
           </div>
           <div className="text-center mt-8">
             <a href="https://www.instagram.com/divineshaderesort?igsh=bTVvN3k2ejI2ZnY%3D" target="_blank" rel="noopener noreferrer" className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-full font-semibold transition duration-300 inline-block">View More on Instagram</a>
