@@ -8,26 +8,60 @@
 }
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #FAF7F2;
+  --foreground: #2D4A3E;
+
+  /* Resort Color Palette */
+  --color-resort-cream: #FAF7F2;
+  --color-resort-sage: #8B9A7D;
+  --color-resort-terracotta: #C67D4B;
+  --color-resort-forest: #2D4A3E;
+  --color-resort-sand: #E8DFD0;
+  --color-resort-gold: #B8956E;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-resort-cream: var(--color-resort-cream);
+  --color-resort-sage: var(--color-resort-sage);
+  --color-resort-terracotta: var(--color-resort-terracotta);
+  --color-resort-forest: var(--color-resort-forest);
+  --color-resort-sand: var(--color-resort-sand);
+  --color-resort-gold: var(--color-resort-gold);
+  --font-serif: var(--font-playfair);
+  --font-cormorant: var(--font-cormorant);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #1a1a1a;
+    --foreground: #FAF7F2;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: 'RuntimeRegular', Arial, Helvetica, sans-serif;
+  font-family: var(--font-cormorant), 'RuntimeRegular', Georgia, serif;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-resort-sand);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-resort-sage);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-resort-forest);
 }
