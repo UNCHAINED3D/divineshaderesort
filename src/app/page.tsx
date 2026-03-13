@@ -61,8 +61,8 @@ export default function Home() {
       {/* Header */}
       <header
         className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled
-            ? 'bg-white/95 backdrop-blur-md shadow-lg py-3'
-            : 'bg-white/80 backdrop-blur-sm py-4'
+          ? 'bg-white/95 backdrop-blur-md shadow-lg py-3'
+          : 'bg-white/80 backdrop-blur-sm py-4'
           }`}
       >
         <div className="container mx-auto px-4 flex justify-between items-center">
@@ -162,7 +162,7 @@ export default function Home() {
             Welcome to Paradise
           </h2>
           <p className="font-cormorant text-xl md:text-2xl mb-8 text-white/90 max-w-2xl mx-auto leading-relaxed">
-            Escape to the tranquil rainforest mountains of the Scenic Rim, Queensland. A Bali-inspired couples wellness retreat.
+            Escape to the tranquil rainforest mountains of the Scenic Rim, Queensland. A rustic couples wellness resort among the gum trees.
           </p>
           <button
             onClick={() => scrollToSection('booking')}
@@ -367,8 +367,8 @@ export default function Home() {
                         <div
                           key={day}
                           className={`text-center p-2 rounded font-cormorant ${available
-                              ? 'bg-resort-sage/30 text-resort-forest'
-                              : 'bg-resort-terracotta/20 text-resort-terracotta'
+                            ? 'bg-resort-sage/30 text-resort-forest'
+                            : 'bg-resort-terracotta/20 text-resort-terracotta'
                             }`}
                         >
                           {day}
