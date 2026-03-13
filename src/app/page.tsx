@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 
 const slides = [
-  'https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+  'https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
   'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
   'https://images.unsplash.com/photo-1540541338287-41700207dee6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80'
 ];
@@ -167,10 +167,10 @@ export default function Home() {
             Experience the beauty of Divine Shade Resort through our curated collection of images.
           </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Resort view" className="w-full h-64 object-cover rounded-lg hover:scale-105 transition duration-300" />
-            <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Luxury villa" className="w-full h-64 object-cover rounded-lg hover:scale-105 transition duration-300" />
-            <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Treehouse" className="w-full h-64 object-cover rounded-lg hover:scale-105 transition duration-300" />
-            <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Garden retreat" className="w-full h-64 object-cover rounded-lg hover:scale-105 transition duration-300" />
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Australian rainforest resort" className="w-full h-64 object-cover rounded-lg hover:scale-105 transition duration-300" />
+            <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Luxury cabin in rainforest" className="w-full h-64 object-cover rounded-lg hover:scale-105 transition duration-300" />
+            <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Queensland rainforest" className="w-full h-64 object-cover rounded-lg hover:scale-105 transition duration-300" />
+            <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Treehouse retreat" className="w-full h-64 object-cover rounded-lg hover:scale-105 transition duration-300" />
           </div>
           <div className="text-center mt-8">
             <a href="https://www.instagram.com/divineshaderesort?igsh=bTVvN3k2ejI2ZnY%3D" target="_blank" rel="noopener noreferrer" className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-full font-semibold transition duration-300 inline-block">View More on Instagram</a>
