@@ -188,7 +188,7 @@ export default function Home() {
           </h2>
           <div className="w-24 h-1 bg-resort-terracotta mx-auto mb-8"></div>
           <p className="font-cormorant text-xl text-center max-w-3xl mx-auto mb-16 text-gray-600 leading-relaxed">
-            Located in the beautiful Scenic Rim, Queensland, Divine Shade Resort offers a serene getaway in the rainforest mountain area, reminiscent of a Bali couples retreat. Surrounded by lush greenery and mountain views, our resort provides the perfect setting for relaxation, rejuvenation, and romance.
+            Located in the beautiful Scenic Rim, Queensland, Divine Shade Resort offers a serene getaway in the rainforest mountain area, reminiscent of a rustic forest retreat. Surrounded by lush greenery and mountain views, our resort provides the perfect setting for relaxation, rejuvenation, and romance.
           </p>
           <div className="grid md:grid-cols-3 gap-8">
             {[
@@ -276,7 +276,7 @@ export default function Home() {
           <div className="w-24 h-1 bg-resort-terracotta mx-auto mb-16"></div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { title: 'Spa & Wellness', desc: 'Indulge in traditional Balinese massages and wellness therapies.', image: '/balcony-hottub.png' },
+              { title: 'Spa & Wellness', desc: 'Indulge in relaxing massages and wellness therapies.', image: '/balcony-hottub.png' },
               { title: 'Yoga & Meditation', desc: 'Daily yoga classes overlooking the rainforest.', image: '/yoga.png' },
               { title: 'Organic Dining', desc: 'Fresh, locally-sourced meals prepared with love.', image: '/organic-food.png' },
               { title: 'Nature Walks', desc: 'Explore the Scenic Rim\'s breathtaking trails.', image: '/walking-track.png' },
@@ -532,7 +532,7 @@ export default function Home() {
       <footer className="bg-resort-forest text-white py-12">
         <div className="container mx-auto px-4 text-center">
           <h3 className="font-serif text-2xl font-bold mb-4">Divine Shade Resort</h3>
-          <p className="font-cormorant text-white/80 mb-6">Your Bali-inspired sanctuary in the Queensland rainforest</p>
+          <p className="font-cormorant text-white/80 mb-6">Your rustic forest sanctuary in the Queensland rainforest</p>
           <div className="flex justify-center space-x-6 mb-8">
             <a
               href="https://www.instagram.com/divineshaderesort?igsh=bTVvN3k2ejI2ZnY%3D"
